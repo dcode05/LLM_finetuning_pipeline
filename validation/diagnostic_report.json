@@ -1,0 +1,186 @@
+{
+  "timestamp": "2025-04-07T01:23:25.484989",
+  "system_info": {
+    "os": "Windows",
+    "os_version": "10.0.19045",
+    "python_version": "3.11.9",
+    "python_path": "C:\\Users\\DROHA\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe"
+  },
+  "memory": {
+    "total_gb": 7.9,
+    "available_gb": 2.18,
+    "percent_used": 72.4
+  },
+  "disk_space": {
+    "total_gb": 930.89,
+    "free_gb": 856.43,
+    "free_percent": 92.0
+  },
+  "gpu_info": {
+    "torch_cuda_available": false,
+    "cuda_version": null,
+    "gpu_count": 0,
+    "gpu_names": [],
+    "gpu_memory": []
+  },
+  "required_packages": {
+    "numpy": {
+      "installed": true,
+      "version": "2.2.4",
+      "min_version": "1.20.0",
+      "message": "OK"
+    },
+    "torch": {
+      "installed": true,
+      "version": "2.6.0+cpu",
+      "min_version": "2.0.0",
+      "message": "OK"
+    },
+    "transformers": {
+      "installed": true,
+      "version": "4.51.0",
+      "min_version": "4.30.0",
+      "message": "OK"
+    },
+    "datasets": {
+      "installed": true,
+      "version": "3.5.0",
+      "min_version": "2.12.0",
+      "message": "OK"
+    },
+    "peft": {
+      "installed": true,
+      "version": "0.15.1",
+      "min_version": "0.4.0",
+      "message": "OK"
+    },
+    "evaluate": {
+      "installed": true,
+      "version": "0.4.3",
+      "min_version": "0.4.0",
+      "message": "OK"
+    },
+    "scikit-learn": {
+      "installed": false,
+      "version": null,
+      "min_version": "1.0.0",
+      "message": "Not installed"
+    }
+  },
+  "optional_packages": {
+    "accelerate": {
+      "installed": true,
+      "version": "1.6.0",
+      "min_version": "0.20.0",
+      "message": "OK"
+    },
+    "bitsandbytes": {
+      "installed": true,
+      "version": "0.45.4",
+      "min_version": "0.39.0",
+      "message": "OK"
+    },
+    "tensorboard": {
+      "installed": false,
+      "version": null,
+      "min_version": "2.12.0",
+      "message": "Not installed"
+    },
+    "wandb": {
+      "installed": false,
+      "version": null,
+      "min_version": "0.15.0",
+      "message": "Not installed"
+    },
+    "hyperopt": {
+      "installed": false,
+      "version": null,
+      "min_version": "0.2.7",
+      "message": "Not installed"
+    },
+    "ray": {
+      "installed": true,
+      "version": "2.44.1",
+      "min_version": "2.4.0",
+      "message": "OK"
+    }
+  },
+  "pytorch_cpu_test": {
+    "functional": true,
+    "result": 32.0
+  },
+  "pytorch_gpu_test": {
+    "functional": false,
+    "error": "CUDA not available"
+  },
+  "workspace_structure": {
+    "directories": {
+      "data": {
+        "exists": true
+      },
+      "models": {
+        "exists": true
+      },
+      "pipeline": {
+        "exists": true
+      },
+      "validation": {
+        "exists": true
+      }
+    },
+    "files": {
+      "requirements.txt": {
+        "exists": true
+      },
+      "README.md": {
+        "exists": true
+      }
+    }
+  },
+  "write_permissions": {
+    ".": {
+      "can_write": true
+    },
+    "validation": {
+      "can_write": true
+    },
+    "data": {
+      "can_write": true
+    },
+    "validation/outputs": {
+      "can_write": true
+    }
+  },
+  "configs": {
+    "validation/quick_test_config.json": {
+      "exists": true,
+      "valid": true
+    },
+    "validation/synthetic_test_config.json": {
+      "exists": true,
+      "valid": true
+    }
+  },
+  "data_contents": {
+    "synthetic_data": {
+      "exists": true,
+      "splits": {
+        "train": {
+          "exists": false
+        },
+        "validation": {
+          "exists": false
+        },
+        "test": {
+          "exists": false
+        }
+      }
+    }
+  },
+  "huggingface_cache": {
+    "cache_dir": "C:\\Users\\DROHA\\.cache\\huggingface\\hub",
+    "exists": true,
+    "size_gb": 0.33,
+    "can_write": true
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "output_dir": "outputs/example_run",
+  "data": {
+    "preprocessing": {
+      "type": "text",
+      "max_length": 512,
+      "text_column": "text",
+      "label_column": "label"
+    },
+    "tokenization": {
+      "type": "huggingface",
+      "model_name_or_path": "distilgpt2",
+      "padding": "max_length",
+      "truncation": true,
+      "max_length": 512
+    },
+    "dataset": {
+      "type": "huggingface",
+      "name": "imdb",
+      "load_from_hub": true,
+      "split": {
+        "train": "train[:1000]",
+        "validation": "test[:200]",
+        "test": "test[200:400]"
+      }
+    }
+  },
+  "model": {
+    "name_or_path": "distilgpt2",
+    "type": "huggingface",
+    "adapter": {
+      "type": "lora",
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05,
+      "target_modules": ["c_attn", "c_proj"]
+    }
+  },
+  "training": {
+    "type": "huggingface",
+    "epochs": 3,
+    "batch_size": 8,
+    "learning_rate": 5e-5,
+    "optimizer": "adamw",
+    "weight_decay": 0.01,
+    "lr_scheduler": "linear",
+    "warmup_steps": 100,
+    "save_strategy": "epoch",
+    "evaluation_strategy": "epoch",
+    "logging_steps": 50,
+    "fp16": false
+  },
+  "evaluation": {
+    "type": "huggingface",
+    "metrics": ["accuracy", "f1"]
+  },
+  "hpo": {
+    "enabled": true,
+    "type": "grid",
+    "max_evals": 4,
+    "metric": "eval_loss",
+    "direction": "minimize",
+    "parameters": {
+      "learning_rate": [1e-5, 5e-5, 1e-4],
+      "weight_decay": [0.0, 0.01],
+      "batch_size": [4, 8]
+    }
+  }
+} 

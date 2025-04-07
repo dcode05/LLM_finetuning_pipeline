@@ -1,0 +1,602 @@
+[
+  {
+    "text": "A mediocre film with terrible performance and disappointing cinematography. The pacing was too slow.",
+    "label": 0
+  },
+  {
+    "text": "A amazing film with wonderful acting and fantastic plot. The character development was superb.",
+    "label": 1
+  },
+  {
+    "text": "The acting was mediocre and the story was terrible. The character development was superb.",
+    "label": 0
+  },
+  {
+    "text": "I really enjoyed this direction. The character was excellent and The character development was superb.",
+    "label": 1
+  },
+  {
+    "text": "This movie was disappointing. The acting was mediocre and the cinematography was bad. I wouldn't recommend it.",
+    "label": 0
+  },
+  {
+    "text": "I really enjoyed this direction. The story was wonderful and I struggled to finish it.",
+    "label": 1
+  },
+  {
+    "text": "This movie was brilliant! The character was great and the direction was fantastic. It fell short of expectations.",
+    "label": 1
+  },
+  {
+    "text": "This plot is bad. I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "This character is boring. I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "This plot is mediocre. The special effects were impressive.",
+    "label": 0
+  },
+  {
+    "text": "A wonderful film with amazing cinematography and brilliant performance. It exceeded my expectations.",
+    "label": 1
+  },
+  {
+    "text": "The story was excellent and the acting was wonderful. The special effects were impressive.",
+    "label": 1
+  },
+  {
+    "text": "This story is great! The characters were flat.",
+    "label": 1
+  },
+  {
+    "text": "This direction is great! The pacing was perfect.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this story. The script was boring and The pacing was perfect.",
+    "label": 0
+  },
+  {
+    "text": "This cinematography is fantastic! The special effects were impressive.",
+    "label": 1
+  },
+  {
+    "text": "The plot was brilliant and the acting was outstanding. I couldn't stop watching!",
+    "label": 1
+  },
+  {
+    "text": "This movie was outstanding! The acting was great and the direction was wonderful. The pacing was perfect.",
+    "label": 1
+  },
+  {
+    "text": "I really enjoyed this acting. The script was outstanding and The character development was superb.",
+    "label": 1
+  },
+  {
+    "text": "The performance was bad and the story was mediocre. The character development was superb.",
+    "label": 0
+  },
+  {
+    "text": "A brilliant film with brilliant acting and amazing direction. I struggled to finish it.",
+    "label": 1
+  },
+  {
+    "text": "A mediocre film with poor performance and poor acting. I was disappointed throughout.",
+    "label": 0
+  },
+  {
+    "text": "The performance was mediocre and the direction was mediocre. I struggled to finish it.",
+    "label": 0
+  },
+  {
+    "text": "The acting was boring and the plot was bad. I couldn't stop watching!",
+    "label": 0
+  },
+  {
+    "text": "I didn't enjoy this plot. The character was awful and The characters were flat.",
+    "label": 0
+  },
+  {
+    "text": "This script is terrible. The characters were flat.",
+    "label": 0
+  },
+  {
+    "text": "This performance is awful. It kept me engaged throughout.",
+    "label": 0
+  },
+  {
+    "text": "This movie was outstanding! The direction was outstanding and the acting was fantastic. The character development was superb.",
+    "label": 1
+  },
+  {
+    "text": "A excellent film with brilliant direction and excellent cinematography. I wouldn't recommend it.",
+    "label": 1
+  },
+  {
+    "text": "This cinematography is poor. The special effects were impressive.",
+    "label": 0
+  },
+  {
+    "text": "The cinematography was poor and the character was disappointing. The character development was superb.",
+    "label": 0
+  },
+  {
+    "text": "I really enjoyed this script. The performance was excellent and I was disappointed throughout.",
+    "label": 1
+  },
+  {
+    "text": "The acting was boring and the direction was bad. It kept me engaged throughout.",
+    "label": 0
+  },
+  {
+    "text": "This movie was disappointing. The cinematography was disappointing and the script was bad. I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "This movie was disappointing. The character was poor and the story was poor. It fell short of expectations.",
+    "label": 0
+  },
+  {
+    "text": "This character is excellent! The special effects were impressive.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this character. The performance was awful and The pacing was perfect.",
+    "label": 0
+  },
+  {
+    "text": "I really enjoyed this performance. The direction was outstanding and I couldn't stop watching!",
+    "label": 1
+  },
+  {
+    "text": "I really enjoyed this character. The plot was brilliant and The characters were flat.",
+    "label": 1
+  },
+  {
+    "text": "This movie was mediocre. The plot was awful and the cinematography was bad. I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "The story was awful and the performance was poor. The pacing was perfect.",
+    "label": 0
+  },
+  {
+    "text": "A awful film with mediocre script and terrible plot. I couldn't stop watching!",
+    "label": 0
+  },
+  {
+    "text": "This story is terrible. The special effects were impressive.",
+    "label": 0
+  },
+  {
+    "text": "This movie was outstanding! The performance was fantastic and the character was outstanding. I struggled to finish it.",
+    "label": 1
+  },
+  {
+    "text": "This movie was mediocre. The direction was awful and the story was terrible. I struggled to finish it.",
+    "label": 0
+  },
+  {
+    "text": "I didn't enjoy this acting. The story was awful and I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "I didn't enjoy this character. The script was bad and I was disappointed throughout.",
+    "label": 0
+  },
+  {
+    "text": "This cinematography is great! The characters were flat.",
+    "label": 1
+  },
+  {
+    "text": "This direction is fantastic! The special effects were impressive.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this character. The performance was disappointing and I couldn't stop watching!",
+    "label": 0
+  },
+  {
+    "text": "This character is disappointing. I struggled to finish it.",
+    "label": 0
+  },
+  {
+    "text": "A brilliant film with outstanding character and great plot. The pacing was too slow.",
+    "label": 1
+  },
+  {
+    "text": "A amazing film with great character and great cinematography. It kept me engaged throughout.",
+    "label": 1
+  },
+  {
+    "text": "I really enjoyed this direction. The cinematography was outstanding and I couldn't stop watching!",
+    "label": 1
+  },
+  {
+    "text": "The character was fantastic and the cinematography was excellent. The special effects were poor.",
+    "label": 1
+  },
+  {
+    "text": "A brilliant film with fantastic plot and wonderful plot. The special effects were impressive.",
+    "label": 1
+  },
+  {
+    "text": "This movie was great! The script was wonderful and the direction was amazing. It kept me engaged throughout.",
+    "label": 1
+  },
+  {
+    "text": "The performance was great and the story was great. The pacing was perfect.",
+    "label": 1
+  },
+  {
+    "text": "A amazing film with wonderful acting and great acting. I wouldn't recommend it.",
+    "label": 1
+  },
+  {
+    "text": "The performance was disappointing and the plot was bad. The special effects were impressive.",
+    "label": 0
+  },
+  {
+    "text": "This movie was bad. The character was awful and the direction was terrible. I struggled to finish it.",
+    "label": 0
+  },
+  {
+    "text": "A boring film with boring performance and awful cinematography. I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "The cinematography was bad and the plot was poor. The character development was superb.",
+    "label": 0
+  },
+  {
+    "text": "I didn't enjoy this script. The plot was awful and The special effects were poor.",
+    "label": 0
+  },
+  {
+    "text": "The script was awful and the script was terrible. The special effects were poor.",
+    "label": 0
+  },
+  {
+    "text": "This acting is bad. I couldn't stop watching!",
+    "label": 0
+  },
+  {
+    "text": "A bad film with terrible plot and mediocre script. It exceeded my expectations.",
+    "label": 0
+  },
+  {
+    "text": "This movie was bad. The story was bad and the performance was boring. The special effects were impressive.",
+    "label": 0
+  },
+  {
+    "text": "This direction is fantastic! It fell short of expectations.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this acting. The cinematography was mediocre and It kept me engaged throughout.",
+    "label": 0
+  },
+  {
+    "text": "I didn't enjoy this story. The story was bad and It fell short of expectations.",
+    "label": 0
+  },
+  {
+    "text": "This story is great! I was disappointed throughout.",
+    "label": 1
+  },
+  {
+    "text": "The acting was great and the character was wonderful. I wouldn't recommend it.",
+    "label": 1
+  },
+  {
+    "text": "This movie was disappointing. The direction was boring and the plot was awful. The special effects were poor.",
+    "label": 0
+  },
+  {
+    "text": "This movie was boring. The cinematography was awful and the plot was awful. I struggled to finish it.",
+    "label": 0
+  },
+  {
+    "text": "A disappointing film with awful direction and disappointing plot. I wouldn't recommend it.",
+    "label": 0
+  },
+  {
+    "text": "A brilliant film with brilliant direction and fantastic character. I wouldn't recommend it.",
+    "label": 1
+  },
+  {
+    "text": "This movie was bad. The cinematography was awful and the direction was bad. I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "This story is fantastic! I was disappointed throughout.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this performance. The acting was awful and I was disappointed throughout.",
+    "label": 0
+  },
+  {
+    "text": "I really enjoyed this plot. The character was excellent and It kept me engaged throughout.",
+    "label": 1
+  },
+  {
+    "text": "This plot is bad. The special effects were impressive.",
+    "label": 0
+  },
+  {
+    "text": "The acting was outstanding and the script was great. The character development was superb.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this performance. The character was disappointing and I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "A boring film with bad story and terrible script. I wouldn't recommend it.",
+    "label": 0
+  },
+  {
+    "text": "This cinematography is bad. I was disappointed throughout.",
+    "label": 0
+  },
+  {
+    "text": "The direction was wonderful and the character was excellent. It fell short of expectations.",
+    "label": 1
+  },
+  {
+    "text": "I really enjoyed this performance. The story was fantastic and It kept me engaged throughout.",
+    "label": 1
+  },
+  {
+    "text": "A poor film with mediocre script and awful character. I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "This movie was mediocre. The character was awful and the performance was boring. The special effects were poor.",
+    "label": 0
+  },
+  {
+    "text": "A outstanding film with excellent cinematography and excellent plot. The special effects were impressive.",
+    "label": 1
+  },
+  {
+    "text": "A outstanding film with brilliant direction and great performance. The characters were flat.",
+    "label": 1
+  },
+  {
+    "text": "The character was poor and the direction was boring. The pacing was too slow.",
+    "label": 0
+  },
+  {
+    "text": "The story was excellent and the performance was fantastic. The pacing was too slow.",
+    "label": 1
+  },
+  {
+    "text": "This movie was bad. The acting was boring and the character was awful. I struggled to finish it.",
+    "label": 0
+  },
+  {
+    "text": "This movie was terrible. The cinematography was poor and the acting was bad. I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "The direction was fantastic and the character was great. The pacing was too slow.",
+    "label": 1
+  },
+  {
+    "text": "This movie was fantastic! The cinematography was amazing and the story was excellent. The characters were flat.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this acting. The story was poor and It exceeded my expectations.",
+    "label": 0
+  },
+  {
+    "text": "This story is awful. The characters were flat.",
+    "label": 0
+  },
+  {
+    "text": "This movie was outstanding! The direction was fantastic and the script was fantastic. The pacing was too slow.",
+    "label": 1
+  },
+  {
+    "text": "This acting is excellent! I struggled to finish it.",
+    "label": 1
+  },
+  {
+    "text": "I really enjoyed this script. The plot was fantastic and The character development was superb.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this performance. The direction was mediocre and I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "This acting is mediocre. The special effects were impressive.",
+    "label": 0
+  },
+  {
+    "text": "The performance was wonderful and the script was amazing. The character development was superb.",
+    "label": 1
+  },
+  {
+    "text": "This movie was boring. The character was disappointing and the acting was bad. I couldn't stop watching!",
+    "label": 0
+  },
+  {
+    "text": "The acting was boring and the acting was terrible. I would definitely recommend it!",
+    "label": 0
+  },
+  {
+    "text": "A excellent film with wonderful performance and wonderful cinematography. The pacing was perfect.",
+    "label": 1
+  },
+  {
+    "text": "I really enjoyed this character. The script was great and I couldn't stop watching!",
+    "label": 1
+  },
+  {
+    "text": "The acting was disappointing and the direction was disappointing. The characters were flat.",
+    "label": 0
+  },
+  {
+    "text": "The script was terrible and the cinematography was poor. The pacing was too slow.",
+    "label": 0
+  },
+  {
+    "text": "This acting is boring. It fell short of expectations.",
+    "label": 0
+  },
+  {
+    "text": "The plot was awful and the story was disappointing. The pacing was perfect.",
+    "label": 0
+  },
+  {
+    "text": "A amazing film with wonderful acting and amazing acting. It fell short of expectations.",
+    "label": 1
+  },
+  {
+    "text": "The character was great and the character was brilliant. It fell short of expectations.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this plot. The performance was disappointing and The special effects were impressive.",
+    "label": 0
+  },
+  {
+    "text": "A bad film with disappointing story and disappointing story. I couldn't stop watching!",
+    "label": 0
+  },
+  {
+    "text": "I didn't enjoy this cinematography. The direction was poor and The character development was superb.",
+    "label": 0
+  },
+  {
+    "text": "This plot is disappointing. The pacing was perfect.",
+    "label": 0
+  },
+  {
+    "text": "I really enjoyed this story. The plot was excellent and It kept me engaged throughout.",
+    "label": 1
+  },
+  {
+    "text": "A great film with great story and outstanding story. It kept me engaged throughout.",
+    "label": 1
+  },
+  {
+    "text": "I didn't enjoy this direction. The acting was disappointing and It exceeded my expectations.",
+    "label": 0
+  },
+  {
+    "text": "This movie was poor. The plot was disappointing and the character was terrible. It exceeded my expectations.",
+    "label": 0
+  },
+  {
+    "text": "This plot is mediocre. The pacing was perfect.",
+    "label": 0
+  },
+  {
+    "text": "This performance is terrible. The special effects were poor.",
+    "label": 0
+  },
+  {
+    "text": "This movie was great! The direction was fantastic and the plot was great. The characters were flat.",
+    "label": 1
+  },
+  {
+    "text": "This script is disappointing. I wouldn't recommend it.",
+    "label": 0
+  },
+  {
+    "text": "The story was disappointing and the script was disappointing. I was disappointed throughout.",
+    "label": 0
+  },
+  {
+    "text": "This plot is boring. It exceeded my expectations.",
+    "label": 0
+  },
+  {
+    "text": "I didn't enjoy this script. The performance was bad and It fell short of expectations.",
+    "label": 0
+  },
+  {
+    "text": "This movie was awful. The character was terrible and the script was bad. I wouldn't recommend it.",
+    "label": 0
+  },
+  {
+    "text": "I really enjoyed this plot. The acting was outstanding and It exceeded my expectations.",
+    "label": 1
+  },
+  {
+    "text": "A brilliant film with amazing story and brilliant cinematography. I wouldn't recommend it.",
+    "label": 1
+  },
+  {
+    "text": "I really enjoyed this acting. The acting was amazing and I couldn't stop watching!",
+    "label": 1
+  },
+  {
+    "text": "This plot is outstanding! It kept me engaged throughout.",
+    "label": 1
+  },
+  {
+    "text": "This cinematography is poor. The character development was superb.",
+    "label": 0
+  },
+  {
+    "text": "The direction was great and the acting was great. It fell short of expectations.",
+    "label": 1
+  },
+  {
+    "text": "A boring film with awful direction and terrible direction. The special effects were impressive.",
+    "label": 0
+  },
+  {
+    "text": "I didn't enjoy this story. The direction was awful and The special effects were poor.",
+    "label": 0
+  },
+  {
+    "text": "This movie was boring. The plot was disappointing and the character was boring. I was disappointed throughout.",
+    "label": 0
+  },
+  {
+    "text": "The plot was boring and the cinematography was bad. It kept me engaged throughout.",
+    "label": 0
+  },
+  {
+    "text": "The story was great and the plot was great. I would definitely recommend it!",
+    "label": 1
+  },
+  {
+    "text": "I really enjoyed this acting. The performance was outstanding and The special effects were poor.",
+    "label": 1
+  },
+  {
+    "text": "This movie was boring. The direction was bad and the cinematography was terrible. It fell short of expectations.",
+    "label": 0
+  },
+  {
+    "text": "A great film with outstanding story and excellent character. The pacing was too slow.",
+    "label": 1
+  },
+  {
+    "text": "This plot is bad. I wouldn't recommend it.",
+    "label": 0
+  },
+  {
+    "text": "This direction is excellent! I couldn't stop watching!",
+    "label": 1
+  },
+  {
+    "text": "I really enjoyed this cinematography. The character was wonderful and The pacing was too slow.",
+    "label": 1
+  },
+  {
+    "text": "This performance is boring. I struggled to finish it.",
+    "label": 0
+  }
+]

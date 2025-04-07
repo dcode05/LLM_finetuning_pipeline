@@ -1,0 +1,71 @@
+{
+  "output_dir": "outputs/bert_classifier",
+  "data": {
+    "preprocessing": {
+      "type": "text",
+      "max_length": 256,
+      "text_column": "text",
+      "label_column": "label"
+    },
+    "tokenization": {
+      "type": "huggingface",
+      "model_name_or_path": "distilbert-base-uncased",
+      "padding": "max_length",
+      "truncation": true,
+      "max_length": 256
+    },
+    "dataset": {
+      "type": "huggingface",
+      "name": "glue",
+      "subset": "sst2",
+      "load_from_hub": true,
+      "split": {
+        "train": "train",
+        "validation": "validation", 
+        "test": "test"
+      }
+    }
+  },
+  "model": {
+    "name_or_path": "distilbert-base-uncased",
+    "type": "huggingface",
+    "adapter": {
+      "type": "lora",
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.1,
+      "target_modules": ["query", "key", "value"]
+    }
+  },
+  "training": {
+    "type": "huggingface",
+    "epochs": 3,
+    "batch_size": 16,
+    "learning_rate": 2e-5,
+    "optimizer": "adamw",
+    "weight_decay": 0.01,
+    "lr_scheduler": "linear",
+    "warmup_ratio": 0.1,
+    "save_strategy": "epoch",
+    "evaluation_strategy": "epoch",
+    "logging_steps": 50,
+    "fp16": false,
+    "gradient_accumulation_steps": 1,
+    "optim": "adamw_torch"
+  },
+  "evaluation": {
+    "type": "huggingface",
+    "metrics": ["accuracy", "precision", "recall", "f1"]
+  },
+  "hpo": {
+    "enabled": false,
+    "type": "grid",
+    "max_evals": 6,
+    "metric": "eval_accuracy",
+    "direction": "maximize",
+    "parameters": {
+      "learning_rate": [1e-5, 2e-5, 5e-5],
+      "batch_size": [8, 16, 32]
+    }
+  }
+} 

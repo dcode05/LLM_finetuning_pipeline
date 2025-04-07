@@ -1,0 +1,205 @@
+# Default configuration for LLM finetuning pipeline
+
+# General configuration
+output_dir: "outputs"
+seed: 42
+debug: false
+log_level: "INFO"
+save_steps: 500
+run_hpo: false
+num_workers: 4
+device: "auto"  # auto, cpu, cuda, mps
+
+# Data configuration
+data:
+  dir: "data"
+  dataset:
+    # Choose one of the following loading methods
+    load_from_disk: true  # Load from local disk
+    load_from_hub: true    # Load from Hugging Face Hub
+    
+    # Hub dataset configuration
+    hf_dataset_name: "truthful_qa"  # Name of the dataset on Hugging Face Hub
+    hf_dataset_config: "multiple_choice"  # Optional dataset configuration
+    hf_dataset_split: ["train", "validation"]  # Dataset splits to load
+    
+    # Local dataset configuration
+    train_file: "train.json"  # Path to training data relative to data.dir
+    validation_file: "validation.json"  # Path to validation data
+    test_file: "test.json"  # Path to test data
+    
+    # Dataset format
+    dataset_format: "json"  # json, jsonl, csv, text, parquet, etc.
+    
+    # Text column names
+    prompt_column: "question"  # Column name for input text
+    response_column: "mc1_targets"  # Column name for output text
+    
+    # Optional column mappings and filtering
+    column_mapping:
+      input: "question"
+      output: "mc1_targets"
+    filter_columns: ["question", "mc1_targets"]
+  
+  preprocessing:
+    enabled: true
+    cleaning:
+      remove_html: true
+      fix_unicode: true
+      normalize_whitespace: true
+    filtering:
+      min_length: 10
+      max_length: 2048
+    data_augmentation:
+      enabled: false
+      techniques: []
+  
+  tokenization:
+    max_length: 1024
+    padding: "max_length"
+    truncation: true
+    add_special_tokens: true
+    return_tensors: "pt"
+    
+# Model configuration
+model:
+  name_or_path: "gpt2"  # Pretrained model name or path
+  revision: "main"  # Model revision to use
+  trust_remote_code: false
+  dtype: "auto"  # auto, float32, float16, bfloat16
+  
+  # Model loading
+  load_in_8bit: false  # Load model in 8-bit precision
+  load_in_4bit: false  # Load model in 4-bit precision
+  device_map: "auto"   # auto, cpu, cuda:0, balanced, sequential, etc.
+  
+  # Model adapter configuration
+  adapter:
+    type: "lora"  # lora, prefix, prompt_tuning, adapter, qlora, etc.
+    target_modules: ["q_proj", "v_proj"]  # Modules to apply adapter to
+    lora:
+      r: 8
+      alpha: 32
+      dropout: 0.1
+      bias: "none"  # none, all, lora_only
+      task_type: "CAUSAL_LM"  # CAUSAL_LM, SEQ_CLS, SEQ_2_SEQ_LM, etc.
+    
+    # Optional prompt tuning parameters
+    prompt_tuning:
+      num_virtual_tokens: 20
+      init_from_vocab: true
+      
+    # Optional prefix tuning parameters
+    prefix_tuning:
+      encoder_prefix_length: 10
+      decoder_prefix_length: 10
+      
+# Training configuration
+training:
+  # Training loop configuration
+  do_train: true
+  do_eval: true
+  num_train_epochs: 3
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 8
+  gradient_accumulation_steps: 1
+  
+  # Optimizer configuration
+  optimizer:
+    name: "adamw"  # adamw, adafactor, sgd, etc.
+    learning_rate: 2.0e-5
+    weight_decay: 0.01
+    beta1: 0.9
+    beta2: 0.999
+    epsilon: 1.0e-8
+    
+  # Learning rate scheduler configuration
+  lr_scheduler:
+    name: "cosine"  # linear, cosine, cosine_with_restarts, polynomial, constant, constant_with_warmup
+    num_warmup_steps: 0
+    num_training_steps: null  # Will be set automatically if null
+    
+  # Checkpointing
+  save_strategy: "steps"  # steps, epoch, no
+  save_steps: 500
+  save_total_limit: 3  # Number of checkpoints to keep
+  
+  # Early stopping
+  early_stopping:
+    enabled: false
+    patience: 3
+    metric: "eval_loss"
+    mode: "min"  # min, max
+    
+  # Mixed precision training
+  fp16: false
+  bf16: false
+  
+  # Distributed training
+  distributed_training:
+    enabled: false
+    backend: "nccl"  # nccl, gloo, etc.
+    
+  # Callback configuration
+  callbacks:
+    tensorboard: true
+    wandb:
+      enabled: false
+      project: "llm-finetuning"
+      name: null  # Will be auto-generated if null
+      
+  # Training loop tweaks
+  logging_steps: 100
+  eval_steps: 500
+  eval_accumulation_steps: null
+  predict_with_generate: false
+  max_grad_norm: 1.0
+    
+# Evaluation configuration
+evaluation:
+  metrics: ["accuracy", "rouge", "bleu"]
+  # Prediction settings
+  generation_config:
+    max_new_tokens: 100
+    do_sample: true
+    temperature: 0.7
+    top_p: 0.9
+    top_k: 50
+    num_beams: 1
+    repetition_penalty: 1.0
+    no_repeat_ngram_size: 0
+    
+# Hyperparameter optimization configuration
+hpo:
+  enabled: false
+  framework: "optuna"  # optuna, ray
+  n_trials: 10
+  direction: "maximize"  # maximize, minimize
+  metric: "eval_accuracy"
+  
+  # Search space
+  search_space:
+    model.adapter.lora.r: [4, 8, 16, 32]
+    model.adapter.lora.alpha: [16, 32, 64]
+    training.optimizer.learning_rate: {type: "loguniform", low: 1e-6, high: 1e-4}
+    training.per_device_train_batch_size: [4, 8, 16]
+    
+  # Pruning
+  pruning:
+    enabled: true
+    patience: 2
+    
+  # Parallel execution
+  n_jobs: 1
+  
+# Deployment configuration
+deployment:
+  export_format: "safetensors"  # pytorch, safetensors, onnx
+  quantization:
+    enabled: false
+    bits: 8  # 4, 8
+    method: "dynamic"  # dynamic, static
+  serving:
+    framework: "huggingface"  # huggingface, triton, torchserve, fastapi
+    batch_size: 1
+    max_concurrent_requests: 16 
